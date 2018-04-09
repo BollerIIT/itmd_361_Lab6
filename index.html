@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lab 7 - Basic JavaScript Event Handling and DOM</title>
+	<title>Lab 6 - Basic JavaScript Event Handling and DOM</title>
 	<style type="text/css">
 		.center {
 			text-align: center;
@@ -36,13 +36,11 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-    var button = document.getElementById(entrybutton);
+    var button = document.getElementById("entrybutton");
     button.addEventListener("click", function() {
-      var txt = document.getElementById(entryinput);
-      var changedText = document.getElementById(textoutput);
+      var txt = document.getElementById("entryinput").value;
+      document.getElementById("textoutput").innerHTML = txt;
       alert("Mykola Tokar: " + txt);
-      changedText = txt;
-
     })
 	</script>
 </body>
